@@ -14,3 +14,10 @@ class BookResponseSchema(BaseModel):
     title:str
     description:Optional[str]
     author_id:int
+
+
+
+class BookUpdateSchema(BaseModel):
+    title:Optional[str]
+    description:Optional[str]
+    author_id:Optional[int]
